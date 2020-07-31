@@ -1,0 +1,132 @@
+/* ********* Google Fonts ************ */
+/* nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+/* work sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* ****  header style css  start **** */
+/* navigation bar */
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/bg-image-5.jpg");
+}
+header .logo{
+    width:160px;
+    height: 60px;;
+}
+header .nav-link {
+    font-size:1.2rem;
+    font-family:'Work Sans',sans-serif;
+}
+.navbar-toggler{
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+.tour-button {
+    height:50px ;
+    width: 200px;
+    border-radius: 31px;
+    background-color: #5485BB;
+    color:#fff;
+    font-family: 'Work Sans',sans-serif;
+    font-size: 18px;
+    margin-left: 90px;
+}
+.tour-button:hover{
+    color:#fff;
+    background-color: blue;
+}
+.img-plane {
+    width: 23px;
+    height: 18px;
+}
+
+/* Laptop and up size */
+@media (min-width: 992px){
+    .logo{
+        margin-left: 40px
+    }
+    .nav {
+        margin-left: 240px;
+    }
+    .nav-item {
+        margin-left: 30px;
+    }
+}
+/* Mobile size */
+@media (max-width: 502px) {
+    .navbar-collapse{
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+    .navbar-collapse{
+        background-color: white;
+    }
+    .nav-item:nth-child(1){
+        margin-top:10px;
+    }
+    .img-plane{
+        width:17px;
+        height:13px;
+    }
+    .tour-button {
+        height: 42px;
+        width: 160px;
+        margin: 10px 20px 10px 20px;
+        border-radius: 31px;
+        background-color: #5485BB;
+        color: #fff;
+        font-size: 15px;
+    }
+}
+/* ****  After Navigation bar ***** */
+.quote{
+    font-family: 'Nunito',sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+.social{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:2px solid #D4DAE4;
+    margin-bottom: 15px;
+    position: relative;
+}
+.social-image{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@media (min-width:992px){
+    .header-section {
+        margin-top: 200px;
+        padding-left: 30px;
+    }
+    .header-section .quote{
+        margin-left: 40px;
+        margin-right: 120px;
+    }
+    .social{
+
+    }    
+}
+@media (max-width:552px){
+    .header-section{
+        margin-top: 180px;
+        padding-left: 30px;
+    }
+    .quote{
+        font-size: 46px;
+    }
+    .social-section{
+        margin-top: 70px;
+    }
+}
+/* **** header style css  end **** */
