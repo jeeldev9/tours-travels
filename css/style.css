@@ -104,6 +104,18 @@ header .nav-link {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.facebook:hover{
+    background-color: #2059a0;
+    border:2px solid #2059a0;
+}
+.linked-in:hover{
+    background-color: #2881a8;
+    border:2px solid #2881a8;
+}
+.google:hover {
+    background-color: #ff3807;
+    border: 2px solid #ff3807;
+}
 @media (min-width:992px){
     .header-section {
         margin-top: 200px;
@@ -112,14 +124,11 @@ header .nav-link {
     .header-section .quote{
         margin-left: 40px;
         margin-right: 120px;
-    }
-    .social{
-
-    }    
+    }   
 }
 @media (max-width:552px){
     .header-section{
-        margin-top: 150px;
+        margin-top: 130px;
         padding-left: 30px;
     }
     .quote{
