@@ -15,72 +15,444 @@
 
 	<!-- ================= External CSS ====================== -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+	<!-- ================= Fontawosome CSS ====================== -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+		crossorigin="anonymous" />
 
 </head>
 
 <body>
-
-	<!-- =================Header Section Start ====================== -->
-	<header class="conatiner hero">
-		<nav class="navbar navbar-expand-lg p-3 navbar-light">
-			<img src="logo/logo.png" alt="logo here" class="logo img img-fluid pl-3">
-			<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="container nav">
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav">
-						<li class="nav-item active pl-4">
-							<a class="nav-link text-primary" href="#">HOME</a>
-						</li>
-						<li class="nav-item pl-4">
-							<a class="nav-link" href="#">TOURS</a>
-						</li>
-						<li class="nav-item pl-4">
-							<a class="nav-link" href="#">ABOUT</a>
-						</li>
-						<li class="nav-item pl-4">
-							<a class="nav-link" href="#">BLOG</a>
-						</li>
-						<li class="nav-item pl-4">
-							<a class="nav-link" href="#">CONTACT</a>
-						</li>
-					</ul>
-					<button class="btn tour-button"><img src="icons/paper-palne.png" class="img-plane img-fluid">&nbsp;&nbsp;TAKE A TOUR</button>
+		
+		<!-- =================Header Section Start ====================== -->
+		<header class="conatiner hero">
+			<!--========== Navigation Bar Start ============================-->
+			<nav class="navbar navbar-expand-lg p-3 navbar-light position-sticky">
+				<img src="logo/logo.png" alt="logo here" class="logo img img-fluid pl-3">
+				<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="container nav">
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item active pl-4">
+								<a class="nav-link text-primary" href="#">HOME</a>
+							</li>
+							<li class="nav-item pl-4">
+								<a class="nav-link" href="#">TOURS</a>
+							</li>
+							<li class="nav-item pl-4">
+								<a class="nav-link" href="#">ABOUT</a>
+							</li>
+							<li class="nav-item pl-4">
+								<a class="nav-link" href="#">BLOG</a>
+							</li>
+							<li class="nav-item pl-4">
+								<a class="nav-link" href="#">CONTACT</a>
+							</li>
+						</ul>
+						<button class="btn tour-button"><img src="icons/paper-palne.png"
+								class="img-plane img-fluid">&nbsp;&nbsp;TAKE A TOUR</button>
+					</div>
 				</div>
-			</div>
-		</nav>
-		<!-- After Navigation Bar -->
-		<div class="container-fluid header-section">
-			<div class="row">
-				<div class="col-7">
-					<h2 class="quote text-white">The Best Trips Around <span class="text-info">Iceland</span> Begin With Us.</h2>
-				</div>
-				<div class="col-5 social-section">
-					<div class="row d-block float-right">
-						<div class="col-11">
-							<div class="social facebook">
-								<img src="icons/facebook.png" class="social-image" alt="facebook">
+			</nav>
+			<!--========== Navigation Bar end ============================-->
+			<!-- After Navigation Bar -->
+			<div class="container-fluid header-section" style="z-index:-1;">
+				<div class="row">
+					<div class="col-7">
+						<h2 class="quote text-white">The Best Trips Around <span class="text-info">Iceland</span> Begin With Us.</h2>
+					</div>
+					<div class="col-5 social-section">
+						<div class="row d-block float-right">
+							<div class="col-12">
+								<div class="social facebook">
+									<img src="icons/facebook.png" class="social-image" alt="facebook">
+								</div>
 							</div>
-						</div>
-						<div class="col-11">
-							<div class="social linked-in">
-								<img src="icons/linked-in.png" class="social-image" alt="facebook">
+							<div class="col-11">
+								<div class="social linked-in">
+									<img src="icons/linked-in.png" class="social-image" alt="facebook">
+								</div>
 							</div>
-						</div>
-						<div class="col-11">
-							<div class="social google">
-								<img src="icons/google.png"  class="social-image" alt="facebook">
+							<div class="col-11">
+								<div class="social google">
+									<img src="icons/google.png"  class="social-image" alt="facebook">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- Tour Search Section -->
+			<div class="container-fluid tour-section">
+				<from>
+					<div class="form-inline">
+						<select class="custom-select " id="inputGroupSelect01">
+							<option selected>Date</option>
+							<option value="1">Jul 18,2020</option>
+							<option value="2">Jul 18,2020</option>
+							<option value="3">Jul 18,2020</option>
+						</select>
+						<select class="custom-select" id="inputGroupSelect01">
+							<option selected>Your Price Range</option>
+							<option value="1">Jul 18,2020</option>
+							<option value="2">Jul 18,2020</option>
+							<option value="3">Jul 18,2020</option>
+						</select>
+						<input type="submit" class="btn btn-primary search_tours" value="SEARCH TOURS">
+					</div>
+				</from>
+			</div>
+		</header>
+	
+		<!-- =================Tours Section Start====================== -->
+		<h1 class="text-center mt-5 ">Best Seller</h1>
+		<div class="container my-2 mb-5">
+			<div class="row">
+				<!--Card Start-->
+				<div class="col-lg-4 px-0 mt-5">
+					<div class="card card-tour px-3">
+						<img src="images/1.jpg" class="card-img-top border-0" alt="...">
+						<div class="card-body card-body-tour px-0 py-1">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col d-inline px-0">
+										<p class="text-muted float-left pl-0">7 Days/6 Nights</p>
+										<p class="text-primary price float-right">From &#8377;10,000</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col m-0 p-0 details">
+										<h4>Winter Wonders and Delicious Detours</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Card End-->
+				<!--Card Start-->
+				<div class="col-lg-4 px-0 mt-5">
+					<div class="card card-tour px-3">
+						<img src="images/2.jpg" class="card-img-top border-0" alt="...">
+						<div class="card-body card-body-tour px-0 py-1">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col d-inline px-0">
+										<p class="text-muted float-left pl-0">3 Days/2 Nights</p>
+										<p class="text-primary price float-right">From &#8377;20,000</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col m-0 p-0 details">
+										<h4>South Shore and Glacier Lagoon Mini-Tour</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Card End-->
+				<!--Card Start-->
+				<div class="col-lg-4 px-0 mt-5">
+					<div class="card card-tour px-3">
+						<img src="images/3.jpg" class="card-img-top border-0" alt="...">
+						<div class="card-body card-body-tour px-0 py-1">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col d-inline px-0">
+										<p class="text-muted float-left pl-0">1 Night</p>
+										<p class="text-primary price float-right">From &#8377;5000</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col m-0 p-0 details">
+										<h4>Northern Lights Mystery</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Card End-->
+				<!--Card Start-->
+				<div class="col-lg-4 px-0 mt-5">
+					<div class="card card-tour px-3">
+						<img src="images/4.jpg" class="card-img-top border-0" alt="...">
+						<div class="card-body card-body-tour px-0 py-1">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col d-inline px-0">
+										<p class="text-muted float-left pl-0">7 Days/6 Nights</p>
+										<p class="text-primary price float-right">From &#8377;15,000</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col m-0 p-0 details">
+										<h4>Golden Circle Tour</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Card End-->
+				<!--Card Start-->
+				<div class="col-lg-4 px-0 mt-5">
+					<div class="card card-tour px-3">
+						<img src="images/5.jpg" class="card-img-top border-0" alt="...">
+						<div class="card-body card-body-tour px-0 py-1">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col d-inline px-0">
+										<p class="text-muted float-left pl-0">7 Days/6 Nights</p>
+										<p class="text-primary price float-right">From &#8377;2,000</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col m-0 p-0 details">
+										<h4>South Iceland Winter Explorer -Super Jeep Adventure</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Card End-->
+				<!--Card Start-->
+				<div class="col-lg-4 px-0 mt-5">
+					<div class="card card-tour px-3">
+						<img src="images/6.jpg" class="card-img-top border-0" alt="...">
+						<div class="card-body card-body-tour px-0 py-1">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col d-inline px-0">
+										<p class="text-muted float-left pl-0">7 Days/6 Nights</p>
+										<p class="text-primary price float-right">From &#8377;50,000</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col m-0 p-0 details">
+										<h4>South Iceland Express Road Trip</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Card End-->
+			</div>
 		</div>
-	</header>
+		<!-- =================Tours Section End====================== -->
+		<!-- =================Blog Section Start====================== -->
+		<h1 class="blog-heading py-5">Latest Blog Post</h1>
+		<div class="container my-5">
+			<div class="row">
+				<div class="col-6 mb-5">
+					<div class="card card-blog">
+						<div>
+							<img src="images/blog-1.jpg" class="card-img alt="...">
+							<div class="card-img-overlay align-text">
+								<div class="badge badge-primary text-wrap p-1 px-2">
+									News
+								</div>
+								<h4 class="card-text card-info text-white mt-auto">7 Must-See Places in South Iceland</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 mb-5">
+					<div class="card card-blog">
+						<img src="images/blog-2.jpg" class="card-img" alt="...">
+						<div class="card-img-overlay align-text">
+							<div class="badge badge-primary text-wrap p-1 px-2">
+								News
+							</div>
+							<h4 class="card-text card-info text-white mt-auto">Everything You Need to Know About Icelandic Horses</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 mb-5">
+					<div class="card card-blog">
+						<img src="images/blog-3.jpg" class="card-img" alt="...">
+						<div class="card-img-overlay align-text">
+							<div class="badge badge-primary text-wrap p-1 px-2">
+								News
+							</div>
+							<h4 class="card-text card-info text-white mt-auto">How to See the Northern Lights in Reykjavik</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 mb-5">
+					<div class="card card-blog">
+						<img src="images/blog-4.jpg" class="card-img" alt="...">
+						<div class="card-img-overlay align-text">
+							<div class="badge badge-primary text-wrap p-1 px-2">
+								News
+							</div>
+							<h4 class="card-text card-info text-white mt-auto">ExploreTour’s Ultimate Guide to The Faroe Islands: Top 10 Places to See and More!</h4>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =================Blog Section End====================== -->
+		<!-- =================Footer Section Start====================== -->
+		<!-- Footer -->
+		<footer class="page-footer font-small pt-4">
+		
+			<!-- Footer Links -->
+			<div class="container text-center text-md-left">
+		
+				<!-- Grid row -->
+				<div class="row">
+		
+					<!-- Grid column -->
+					<div class="col-md-4 mx-auto">
+		
+						<!-- Content -->
+						<h5 class="font-weight-bold text-uppercase mt-3 mb-4">ABOUT US</h5>
+						<p>Founded in 2005, ExploreTour offers travelers a great selection of tours and excursions in Iceland. Explore the best and
+						yet untraveled places of this breathtaking Northern destination.</p>
+		
+					</div>
+					<!-- Grid column -->
+		
+					<hr class="clearfix w-100 d-md-none">
+		
+					<!-- Grid column -->
+					<div class="col-md-2 mx-auto">
+		
+						<!-- Links -->
+						<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+		
+						<ul class="list-unstyled">
+							<li>
+								<a href="#!">Link 1</a>
+							</li>
+							<li>
+								<a href="#!">Link 2</a>
+							</li>
+							<li>
+								<a href="#!">Link 3</a>
+							</li>
+							<li>
+								<a href="#!">Link 4</a>
+							</li>
+						</ul>
+		
+					</div>
+					<!-- Grid column -->
+		
+					<hr class="clearfix w-100 d-md-none">
+		
+					<!-- Grid column -->
+					<div class="col-md-2 mx-auto">
+		
+						<!-- Links -->
+						<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+		
+						<ul class="list-unstyled">
+							<li>
+								<a href="#!">Link 1</a>
+							</li>
+							<li>
+								<a href="#!">Link 2</a>
+							</li>
+							<li>
+								<a href="#!">Link 3</a>
+							</li>
+							<li>
+								<a href="#!">Link 4</a>
+							</li>
+						</ul>
+		
+					</div>
+					<!-- Grid column -->
+		
+					<hr class="clearfix w-100 d-md-none">
+		
+					<!-- Grid column -->
+					<div class="col-md-2 mx-auto">
+		
+						<!-- Links -->
+						<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+		
+						<ul class="list-unstyled">
+							<li>
+								<a href="#!">Link 1</a>
+							</li>
+							<li>
+								<a href="#!">Link 2</a>
+							</li>
+							<li>
+								<a href="#!">Link 3</a>
+							</li>
+							<li>
+								<a href="#!">Link 4</a>
+							</li>
+						</ul>
+		
+					</div>
+					<!-- Grid column -->
+		
+				</div>
+				<!-- Grid row -->
+		
+			</div>
+			<!-- Footer Links -->
+			<br><br>
+			<!-- Call to action -->
+			<ul class="list-unstyled list-inline text-center py-2">
+				<li class="list-inline-item">
+					<h5 class="mb-1">Register for free</h5>
+				</li>
+				<li class="list-inline-item">
+					<a href="#!" class="btn btn-danger rounded-pill">Sign up!</a>
+				</li>
+			</ul>
+			<!-- Call to action -->
+		
+			<!-- Social buttons -->
+			<ul class="list-unstyled list-inline text-center ">
+				<li class="list-inline-item">
+					<a class="footer-icons btn-fb mx-1">
+						<i class="fab fa-facebook-f  p-3 h-100 w-100 rounded-circle"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-tw mx-1">
+						<i class="fab fa-twitter p-3  rounded-circle"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-gplus mx-1">
+						<i class="fab fa-google-plus-g p-3  rounded-circle"> </i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="btn-floating btn-li mx-1">
+						<i class="fab fa-linkedin-in p-3  rounded-circle"> </i>
+					</a>
+				</li>
+			</ul>
+			<!-- Social buttons -->
+			<br/>
+			<!-- Copyright -->
+			<div class="footer-copyright py-3 text-center  bg-dark">© 2020 Copyright:
+				<a href="https://jbwebdeveloper.blogspot.com"> JB Web Developer</a>
+			</div>
+			<!-- Copyright -->
+		
+		</footer>
+		<!-- Footer -->
+		<!-- =================Footer Section End====================== -->
 
-	<!-- =================Header Section End ====================== -->
 
 	<!-- ================= Scripts ====================== -->
 

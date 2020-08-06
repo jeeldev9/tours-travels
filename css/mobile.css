@@ -1,0 +1,31 @@
+/* ********* Google Fonts ************ */
+/* nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+/* work sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media (max-width: 502px) {
+    .navbar-collapse{
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+    .navbar-collapse{
+        background-color: white;
+    }
+    .nav-item:nth-child(1){
+        margin-top:10px;
+    }
+    .img-plane{
+        width:17px;
+        height:13px;
+    }
+    .tour-button {
+        height: 42px;
+        width: 160px;
+        margin: 10px 20px 10px 20px;
+        border-radius: 31px;
+        background-color: #5485BB;
+        color: #fff;
+        font-size: 15px;
+    }
+}
